@@ -1,0 +1,32 @@
+<!-- Add this to your story.html -->
+<div class="story-box">
+    <h2>Your Generated Story</h2>
+    <div id="storyContent" class="story-content"></div>
+    <div class="story-actions">
+        <button onclick="window.location.href='index.html'">CREATE ANOTHER</button>
+        <button id="toggleOriginal">SHOW ORIGINAL</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const story = localStorage.getItem('generatedStory');
+        const originalStory = localStorage.getItem('originalStory');
+        const toggleBtn = document.getElementById('toggleOriginal');
+        let showingOriginal = false;
+        
+        if (story) {
+            document.getElementById('storyContent').innerText = story;
+        } else {
+            document.getElementById('storyContent').innerText = 'No story found. Please generate one first.';
+            toggleBtn.style.display = 'none';
+        }
+        
+        toggleBtn.addEventListener('click', function() {
+            showingOriginal = !showingOriginal;
+            document.getElementById('storyContent').innerText = 
+                showingOriginal ? originalStory : story;
+            toggleBtn.textContent = showingOriginal ? 'SHOW MODIFIED' : 'SHOW ORIGINAL';
+        });
+    });
+</script>
