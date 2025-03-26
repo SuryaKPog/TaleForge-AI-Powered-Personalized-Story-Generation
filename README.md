@@ -1,0 +1,2 @@
+# TaleForge-AI-Powered-Personalized-Story-Generation
+TaleForge is an NLP-based story generation system that uses GPT-4 to create unique narratives based on user inputs. The project allows users to define the genre, setting, main character, and key elements of their story. Additionally, users can modify the sentiment (Happy, Dark, Mysterious, Thrilling) to influence the tone of the generated content.
