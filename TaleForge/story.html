@@ -1,32 +1,21 @@
-<!-- Add this to your story.html -->
-<div class="story-box">
-    <h2>Your Generated Story</h2>
-    <div id="storyContent" class="story-content"></div>
-    <div class="story-actions">
-        <button onclick="window.location.href='index.html'">CREATE ANOTHER</button>
-        <button id="toggleOriginal">SHOW ORIGINAL</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Story - TaleForge</title>
+    <link rel="stylesheet" href="pixel-story.css">
+</head>
+<body>
+    <div class="story-box pixel-story">
+        <h2 class="pixel-title">YOUR GENERATED STORY</h2>
+        <div id="storyContent" class="story-content pixel-text"></div>
+        <div class="story-actions">
+            <button class="pixel-button" onclick="window.location.href='index.html'">CREATE ANOTHER</button>
+            <button class="pixel-button" id="toggleOriginal">SHOW ORIGINAL</button>
+        </div>
     </div>
-</div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const story = localStorage.getItem('generatedStory');
-        const originalStory = localStorage.getItem('originalStory');
-        const toggleBtn = document.getElementById('toggleOriginal');
-        let showingOriginal = false;
-        
-        if (story) {
-            document.getElementById('storyContent').innerText = story;
-        } else {
-            document.getElementById('storyContent').innerText = 'No story found. Please generate one first.';
-            toggleBtn.style.display = 'none';
-        }
-        
-        toggleBtn.addEventListener('click', function() {
-            showingOriginal = !showingOriginal;
-            document.getElementById('storyContent').innerText = 
-                showingOriginal ? originalStory : story;
-            toggleBtn.textContent = showingOriginal ? 'SHOW MODIFIED' : 'SHOW ORIGINAL';
-        });
-    });
-</script>
+    <script src="pixel-story.js"></script>
+</body>
+</html>
