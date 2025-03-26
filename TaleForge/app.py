@@ -97,6 +97,24 @@ def handle_generate():
             'status': 'error',
             'message': str(e)
         }), 500
+# Add this new route before if __name__ == '__main__':
+@app.route('/generate-art', methods=['POST'])
+def generate_art():
+    try:
+        data = request.json
+        response = client.images.generate(
+            model="dall-e-3",
+            prompt=f"8-bit pixel art of: {data['prompt']}. Vibrant colors, retro video game style, 16-bit era",
+            n=1,
+            size="1024x1024",
+            quality="standard"
+        )
+        return jsonify({
+            'image_url': response.data[0].url,
+            'revised_prompt': response.data[0].revised_prompt
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     print("\n" + "="*50)
