@@ -1,0 +1,156 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey there",
+        "What's up?",
+        "Good morning",
+        "Greetings"
+      ],
+      "responses": [
+        "Hello! Ready to forge some pixel tales?",
+        "Greetings, adventurer! What brings you to TaleForge today?",
+        "Hi there! Let's create some 8-bit magic together!"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "I'm leaving",
+        "Exit",
+        "Quit"
+      ],
+      "responses": [
+        "May your stories be epic! Farewell!",
+        "Happy crafting! Come back soon!",
+        "Until next time, storysmith!"
+      ]
+    },
+    {
+      "tag": "taleforge_info",
+      "patterns": [
+        "What is TaleForge?",
+        "Tell me about TaleForge",
+        "How does this work?",
+        "Explain the platform",
+        "What can I do here?"
+      ],
+      "responses": [
+        "TaleForge is an AI-powered pixel-art story generator that creates 8-bit narratives with matching illustrations.",
+        "It's a creative tool that transforms your ideas into retro-style stories with visuals, perfect for game devs and writers.",
+        "Imagine a dungeon master that generates both text and pixel art - that's TaleForge! You provide themes, we handle the rest."
+      ],
+      "entities": []
+    },
+    {
+      "tag": "feature_question",
+      "patterns": [
+        "What features do you have?",
+        "What can TaleForge do?",
+        "List your capabilities",
+        "Show me options",
+        "Available functions"
+      ],
+      "responses": [
+        "Key features: 1) AI story generation 2) Pixel art creation 3) Interactive branching 4) Retro-style UI",
+        "I can: Generate stories, create matching 8-bit art, handle branching paths, and export your creations."
+      ],
+      "entities": []
+    },
+    {
+      "tag": "technical_help",
+      "patterns": [
+        "How do I save stories?",
+        "Where are my generated files?",
+        "Export options",
+        "Technical support",
+        "Help with the editor"
+      ],
+      "responses": [
+        "Right now, we dont have that feature but we will implement it in the future"
+      ],
+      "entities": []
+    },
+    {
+      "tag": "creative_help",
+      "patterns": [
+        "How to make better stories?",
+        "Writing tips",
+        "Improve my narrative",
+        "Make it more creative",
+        "Story advice"
+      ],
+      "responses": [
+        "Pro tip: Combine unexpected genres like 'cyberpunk fairy tale' for unique results!",
+        "Try adding specific character traits - the AI works best with detailed prompts."
+      ],
+      "entities": []
+    },
+    {
+      "tag": "story_generation_info",
+      "patterns": [
+        "how does story generation work",
+        "explain the story creator",
+        "tell me about generating tales",
+        "how are stories made"
+      ],
+      "responses": [
+        "The TaleForge website uses AI to transform your ideas into pixel-art stories. I can explain the process, but you'll need to visit the site to actually create stories.",
+        "While I can't generate stories here, the main website combines GPT-4 for text and DALL·E 3 for art. Would you like a link?"
+      ]
+    },
+    {
+      "tag": "website_redirect",
+      "patterns": [
+        "where can I make stories",
+        "go to the generator",
+        "main website",
+        "create mode",
+        "actual generator"
+      ],
+      "responses": [
+        "You can generate stories at the main page - would you like me to explain how it works before you go?",
+        "All story creation happens on our main site. I'm just here to help you prepare your ideas!"
+      ]
+    },
+    {
+      "tag": "example_request",
+      "patterns": [
+        "Show me an example",
+        "Demo story",
+        "Sample output",
+        "Example creation",
+        "What does the output look like?"
+      ],
+      "responses": [
+        "Here's a sample: 'The Pixel Knight' - a story about a warrior made of living pixels fighting glitch monsters.",
+        "Example: 'Neon Wizard' - an 8-bit mage casting spells made of LED lights in a cyberpunk city."
+      ],
+      "entities": []
+    }
+  ],
+  "entity_examples": {
+    "GENRE": [
+      "fantasy",
+      "sci-fi",
+      "cyberpunk",
+      "horror",
+      "mystery",
+      "fairy tale",
+      "steampunk"
+    ],
+    "CHARACTER": [
+      "robot knight",
+      "pixel wizard",
+      "cyber ninja",
+      "ghost detective",
+      "dragon engineer"
+    ]
+  }
+}
