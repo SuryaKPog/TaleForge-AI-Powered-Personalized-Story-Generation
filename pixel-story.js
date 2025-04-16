@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ================ API CONFIGURATION ================
     const API_CONFIG = {
-        KEY: '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', // Your actual OpenAI API key
+        KEY: 'OPEN-AI-KEY', // Your actual OpenAI API key
         ENDPOINT: "https://api.openai.com/v1/images/generations"
     };
     
