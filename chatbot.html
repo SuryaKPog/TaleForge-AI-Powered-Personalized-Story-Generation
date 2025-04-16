@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaleForge Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>TaleForge</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="chatbot.html">Chatbot</a>
+        </div>
+    </nav>
+    
+    <div class="main-container">
+        <h2 class="page-title">Ask our Bot</h2>
+        <div class="chat-interface">
+            <div class="chat-header">
+                TaleForge Assistant
+            </div>
+            
+            <div class="messages-container" id="chat-window">
+                <div class="message bot-message">
+                    Meet COSMO, our Glorious Chatbot!
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" class="message-input" id="user-input" placeholder="Type your message...">
+                <button class="send-btn" onclick="sendMessage()">SEND</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="chatbot.js"></script>
+</body>
+</html>

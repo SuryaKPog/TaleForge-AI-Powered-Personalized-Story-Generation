@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Story - TaleForge</title>
+    <link rel="stylesheet" href="pixel-story.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="story-container">
+        <h1 class="story-title">YOUR GENERATED STORY</h1>
+        <div id="storyContent" class="story-content"></div>
+        
+        <!-- Pixel Art Generation Section -->
+        <div id="artSection" style="display: none;">
+            <button id="generateArtBtn" class="pixel-button pixel-art-btn">GENERATE PIXEL ART</button>
+            <div id="artPreview" class="pixel-art-container">
+                <!-- Art will be inserted here by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="story-buttons">
+            <button class="pixel-button" id="toggleOriginal">SHOW ORIGINAL</button>
+            <button class="pixel-button create-another" onclick="window.location.href='index.html'">CREATE ANOTHER</button>
+        </div>
+    </div>
+
+    <script src="pixel-story.js"></script>
+</body>
+</html>
