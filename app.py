@@ -156,6 +156,7 @@ bot = TaleForgeLSTMChatbot()
 @app.route('/chat', methods=['POST'])
 def chat():
     user_input = request.json.get('message')
+    print(f"[DEBUG] Received user input: {user_input}")
     response = bot.predict_response(user_input)
     return jsonify({
         'question': user_input,
