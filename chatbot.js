@@ -20,7 +20,7 @@ function sendMessage() {
     .then(response => response.json())
     .then(data => {
         // Display bot's response using 'data.answer'
-        chatWindow.innerHTML += `<div class="bot-msg">Bot: ${data.answer}</div>`;
+        chatWindow.innerHTML += `<div class="bot-msg">Cosmo: ${data.answer}</div>`;
         chatWindow.scrollTop = chatWindow.scrollHeight;
     })
     .catch(error => {
